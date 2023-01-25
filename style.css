@@ -1,0 +1,184 @@
+:root {
+  --gray-100: #f6f6f6;
+  --gray-500: #c5c5c5;
+  --gray-700: #323232;
+  --gray-800: #282828;
+  --gray-900: #1e1e1e;
+  
+  --pink-300: #363434;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: var(--gray-900);
+  -webkit-font-smoothing: antialiased;
+  padding-top: 4rem;
+}
+
+body, input, textarea, button, a {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: var(--gray-100);
+}
+
+main {
+  display: flex;
+  gap: 6.0rem;
+  justify-content: center;
+}
+
+.title {
+  margin-bottom: 2rem;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.card {
+  background: var(--gray-800);
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  margin-top: 3rem;
+  padding: 3rem 4rem;
+
+  width: 100%;
+  max-width: 34.8rem;
+}
+
+.card:first-child {
+  margin-top: 0;
+}
+
+/*    PROFILE    */
+
+section.profile-wrapper .profile-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+section.profile-wrapper .profile-card img {
+  height: 12.8rem;
+  border-radius: 50%;
+}
+
+/*    SOCIAL    */
+
+section.profile-wrapper .social-card .social-item {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  font-size: 1.3rem;
+}
+
+section.profile-wrapper .social-card .social-item:first-child {
+  margin-top: 0;
+}
+
+/*    TECHNOLOGIES    */
+
+section.profile-wrapper .tecnologies-card ul{
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+section.profile-wrapper .tecnologies-card ul li.tecnologie-item{
+  background: var(--gray-500);
+  color: var(--gray-900);
+  height: 2.4rem;
+  border-radius: 3rem;
+  padding: .6rem;
+  font-size: .9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*    CERTIFICATION    */
+
+section.profile-wrapper .certification-card ul {
+  padding-left: 4rem;
+}
+
+section.profile-wrapper .certification-card ul li {
+  padding-bottom: 2rem;
+  line-height: 1.7rem;
+}
+
+section.profile-wrapper .certification-card ul li p{
+  font-size: 1.4rem;
+  font-weight: 200;
+}
+
+section.profile-wrapper .certification-card ul li span{
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--gray-500);
+}
+
+/*    PROJECTS    */
+
+section.projects-wrapper {
+  width: 100%;
+  max-width: 102.4rem;
+}
+
+section.projects-wrapper h2 {
+  max-width: 102.4rem;
+}
+
+section.projects-wrapper .projects-cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+section.projects-wrapper .projects-cards .card {
+  max-width: 50rem;
+}
+
+section.projects-wrapper .projects-cards .card:first-child {
+  margin-top: 3rem;
+}
+
+section.projects-wrapper .projects-cards a{
+  text-align: center;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  transition: .4s;
+}
+
+section.projects-wrapper .projects-cards a:hover{
+  background-color: var(--gray-700);
+  box-shadow: none;
+}
+
+section.projects-wrapper .projects-cards .card img {
+  width: 42rem;
+  height: 22.6rem;
+}
+section.projects-wrapper .projects-cards .card p {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+section.projects-wrapper .projects-cards .card span {
+  font-size: 1.2rem;
+}
+
+
+
