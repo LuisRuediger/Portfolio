@@ -20,7 +20,7 @@ html {
 
 body {
   background: var(--gray-900);
-  /* -webkit-font-smoothing: antialiased; */
+  -webkit-font-smoothing: antialiased;
   padding: 4rem;
 }
 
