@@ -21,7 +21,7 @@ html {
 body {
   background: var(--gray-900);
   -webkit-font-smoothing: antialiased;
-  padding-top: 4rem;
+  padding: 4rem;
 }
 
 body, input, textarea, button, a {
@@ -32,6 +32,7 @@ body, input, textarea, button, a {
 }
 
 main {
+  padding: 0 2.4rem;
   display: flex;
   gap: 6.0rem;
   justify-content: center;
@@ -59,6 +60,11 @@ main {
 }
 
 /*    PROFILE    */
+
+section.profile-wrapper {
+  width: 100%;
+  max-width: 35rem;
+}
 
 section.profile-wrapper .profile-card {
   display: flex;
@@ -104,6 +110,10 @@ section.profile-wrapper .tecnologies-card ul li.tecnologie-item{
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+section.profile-wrapper .tecnologies-card ul li.tecnologie-item strong {
+  text-align: center;
 }
 
 /*    CERTIFICATION    */
@@ -168,8 +178,9 @@ section.projects-wrapper .projects-cards a:hover{
 }
 
 section.projects-wrapper .projects-cards .card img {
-  width: 42rem;
+  width: 100%;
   height: 22.6rem;
+  object-fit: contain;
 }
 section.projects-wrapper .projects-cards .card p {
   font-size: 1.8rem;
@@ -180,5 +191,102 @@ section.projects-wrapper .projects-cards .card span {
   font-size: 1.2rem;
 }
 
+/*    @MEDIA    */
 
+@media (max-width: 1550px) {
+  section.projects-wrapper .projects-cards .card {
+    max-width: 40rem;
+  }
+}
 
+@media (max-width: 1400px) {
+  section.projects-wrapper .projects-cards .card {
+    max-width: 37rem;
+  }
+}
+@media (max-width: 1300px) {
+  section.projects-wrapper .projects-cards .card {
+    max-width: 30rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  section.projects-wrapper .projects-cards .card {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  main {
+    flex-wrap: wrap;
+  }
+  section.profile-wrapper {
+    max-width: 100%;
+  }
+
+  section.profile-wrapper .card {
+    max-width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section.projects-wrapper h2 {
+    text-align: center;
+  }
+
+}
+
+@media (max-width: 500px) {
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .profile-card h1 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .profile-card span {
+    font-size: 1.2rem;
+  }
+
+  section.profile-wrapper .social-card .social-item img {
+    height: 16px;
+  }
+
+  section.profile-wrapper .social-card .social-item {
+    font-size: 1.4rem;
+  }
+
+  section.profile-wrapper .card {
+    padding: 2rem;
+  }
+
+  section.profile-wrapper .tecnologies-card ul {
+    justify-content: center;
+  }
+
+  section.projects-wrapper h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  section.profile-wrapper .certification-card ul li strong {
+    font-size: 1.6rem;
+  }
+
+  section.profile-wrapper .certification-card ul li p {
+  font-size: 1.4rem;
+}
+
+section.profile-wrapper .certification-card ul li span {
+  font-size: 1.2rem;
+}
+
+  section.projects-wrapper .projects-cards .card img {
+    height: 10rem;
+  }
+}
